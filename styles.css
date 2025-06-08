@@ -50,3 +50,13 @@ p {
     gap: 10px;
     flex-wrap: wrap;
 }
+
+#video-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#video-section > iframe {
+    align-self: center;
+}
