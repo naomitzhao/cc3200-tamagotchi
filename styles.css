@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+#page {
+    padding: 100px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#description-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#description-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#description-section > div > div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
