@@ -33,13 +33,47 @@
                     current level and XP are displayed on the game main screen above the status bars. At a certain level
                     threshold, which we set to level 4, the size of the pet increases, or scales up, showing growth of the pet.
                 </p>
-                <div>
-                    <img src=https://github.com/user-attachments/assets/7c694b29-2434-44a5-8126-311c06ed911c width="300" height="200"/>
-                    <img src=https://github.com/user-attachments/assets/e9665ec6-e7db-45aa-94c1-18a40f1e6bea width="300" height="200"/>
-                    <img src=https://github.com/user-attachments/assets/8f825190-8832-4daf-89a0-cd70d0b6ea65 width="300" height="200"/>
-                    <img src=https://github.com/user-attachments/assets/1eb5f468-1119-4e99-ae2b-14c94abd846c width="300" height="200"/>
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <figure style="text-align: center;">
+                        <img src="https://github.com/user-attachments/assets/7c694b29-2434-44a5-8126-311c06ed911c" width="300" height="200" />
+                        <figcaption>Menu Screen</figcaption>
+                    </figure>
+                    <figure style="text-align: center;">
+                        <img src="https://github.com/user-attachments/assets/e9665ec6-e7db-45aa-94c1-18a40f1e6bea" width="300" height="200" />
+                        <figcaption>Feeding Game</figcaption>
+                    </figure>
+                    <figure style="text-align: center;">
+                        <img src="https://github.com/user-attachments/assets/8f825190-8832-4daf-89a0-cd70d0b6ea65" width="300" height="200" />
+                        <figcaption>Playing Game </figcaption>
+                    </figure>
+                    <figure style="text-align: center;">
+                        <img src="https://github.com/user-attachments/assets/1eb5f468-1119-4e99-ae2b-14c94abd846c" width="300" height="200" />
+                        <figcaption>Training Game</figcaption>
+                    </figure>
                 </div>
+
             </div>
+            <div>
+                <h3>Mini-Games</h3>
+                <p>
+                    The CC3200 Tamagotchi features three interactive mini-games that are triggered by pressing buttons on the IR remote. These games are designed to restore key pet stats and are visually represented on the OLED screen. Each game is uniquely interactive, using either remote input or motion sensing:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Feeding Game:</strong> This game is started by pressing the "1" button on the remote. A prompt appears on the OLED screen showing a specific button the user must press. The user has 5 seconds to press the correct button. If successful, the pet's hunger stat increases. If the user fails to press the correct button in time, the number changes.
+                    </li>
+                    <li>
+                        <strong>Playing Game:</strong> This game is started by pressing the "2" button on the remote. The user is prompted to shake the CC3200 board, which has a built-in accelerometer. The game continuously reads acceleration values to detect shaking. For every few seconds of shaking, the pet's happiness stat increases. A message is displayed during the game to show progress, and shaking for a longer period leads to more happiness gained. The game ends automatically after a few seconds of inactivity.
+                    </li>
+                    <li>
+                        <strong>Training Game:</strong> This game is started by pressing the "3" button on the remote. This is a motion-based game that uses the onboard accelerometer. The user tilts the CC3200 device left, right, up or down to control a cat sprite that moves across the screen. The goal is to collect XP orbs that appear periodically and randomly on the screen. Each orb collected increases the pet's experience points (XP), helping it level up. The game continues until the user fails to collect an orb within 5 seconds, at which point it ends automatically.
+                    </li>
+                </ul>
+                <p>
+                    Each mini-game is short and designed for quick engagement. Together, they make stat maintenance fun and interactive, while helping the player keep their pet alive and healthy.
+                </p>
+            </div>
+
             <div>
                 <h3>AWS Connection</h3>
                 <p>
@@ -50,7 +84,10 @@
                     web interface also features options to feed and play with the pet.
                 </p>
                 <div>
-                    <img src=https://github.com/user-attachments/assets/47ad1c3b-cc0a-4904-9054-773843b47497 width="400" height="200"/>
+                     <figure style="text-align: center;">
+                        <img src=https://github.com/user-attachments/assets/47ad1c3b-cc0a-4904-9054-773843b47497 width="400" height="200"/>
+                        <figcaption>Web view to see and control the pet</figcaption>
+                     </figure>
                 </div>
             </div>
             <div>
@@ -61,8 +98,14 @@
                     periodically to remind the player to feed or play with the pet.
                 </p>
                 <div>
-                    <img src=https://github.com/user-attachments/assets/45cc1a5f-71d4-45da-9419-fe55d496e18f width="300" height="200"/>
-                    <img src=https://github.com/user-attachments/assets/bbf8f09c-9bc5-4db8-b14c-0aba85625599 width="300" height="200"/>
+                    <figure style="text-align: center;">
+                       <img src=https://github.com/user-attachments/assets/45cc1a5f-71d4-45da-9419-fe55d496e18f width="300" height="200"/>
+                       <figcaption>Pet Ran Away Screen</figcaption>
+                    </figure>
+                    <figure style="text-align: center;">
+                        <img src=https://github.com/user-attachments/assets/bbf8f09c-9bc5-4db8-b14c-0aba85625599 width="300" height="200"/>
+                        <figcaption>LED Alert for Low Happiness or Hunger</figcaption>
+                    </figure>
                 </div>
             </div>
             <div>
@@ -78,9 +121,20 @@
                     notifications when of the pets' hunger or happiness reaches 5.
                 </p>
                 <div>
-                    <img src=https://github.com/user-attachments/assets/cfd0f861-02c3-4706-8ef6-e188d201d79e width="300" height="200"/>
-                    <img src=https://github.com/user-attachments/assets/bc752b37-ebb0-474e-a980-d99386e407db width="300" height="200"/>
-                    <img src=https://github.com/user-attachments/assets/cae0d454-8c9c-4659-ba9f-1221506cc45b width="300" height="200"/>
+                    <figure style="text-align: center;">
+                        <img src=https://github.com/user-attachments/assets/cfd0f861-02c3-4706-8ef6-e188d201d79e width="300" height="200"/>
+                        <figcaption>Main Menu</figcaption>
+                    </figure>
+                    <figure style="text-align: center;">
+                        <img src=https://github.com/user-attachments/assets/bc752b37-ebb0-474e-a980-d99386e407db width="300" height="200"/>
+                        <figcaption>Choose Save</figcaption>
+                    </figure>
+                    <figure style="text-align: center;">
+                        <img src=https://github.com/user-attachments/assets/cae0d454-8c9c-4659-ba9f-1221506cc45b width="300" height="200"/>
+                        <figcaption>Low Hunger or Happiness Email</figcaption>
+                    </figure>
+                    
+                    
                 </div>
             </div>
         </div>

@@ -19,9 +19,21 @@ h3 {
     font-size: 1.5rem;
 }
 
-p {
+p, ul, li, strong {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
+}
+
+figcaption {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    padding-bottom: 10px;
 }
 
 #page {
